@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous" 
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Yukti's ChatRoom App</title>
+    </head>
+    <body>
+        <div class="chat-container">
+            <header class="chat-header">
+                <div class="heading">
+                    <h1>
+                    <img src="images/emoji1.png" height="50" width="58"> 
+                     ChatRoom
+                    </h1>
+                </div>
+                <a href="index.html" class="btn"> Leave Chatroom </a>
+            </header>
+            <main class="chat-main">
+                <div class="chat-bar">
+                    <h3><i class="fas fa-comments"></i> Room Name</h3>
+                    <h2 id="room-name">Room-A</h2>
+                    <h3><i class="fas fa-users"></i> Users</h3>
+                    <div class="user-container">
+                    <ul id="users">
+                                               
+                    </ul>
+                    </div>
+                </div>
+                <div class="messages" class="message-container">
+                 </div>
+                
+            </main>
+                <div class="chat-form-container">
+                    <form id="chat-form">
+                        <input 
+                            id="msg"
+                            type="text"
+                            placeholder="Enter your message..."
+                            requires
+                            autocomplete="off"
+                        />
+                        <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+                    </form>
+                </div>
+        </div>
+        
+        <!-- to access cdnjs library, used to get the username and room name from the url-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w==" crossorigin="anonymous"></script>
+        <!--to access the socket front end library, and now we can access socket io methods in main.js-->
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html> 

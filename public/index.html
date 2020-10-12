@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous" 
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Yukti's ChatRoom App</title>       
+        
+    </head>
+    <body>
+        <div class="home-container">
+            <header class="home-header">
+                <h2>
+                    <img src="images/emoji1.png" height="50" width="58"> 
+                     ChatRoom
+                    </h2>
+            </header>
+            <main class="home-main">
+                <form action="chat.html">
+                    <div class="form">
+                        <div class="form-control">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="username" placeholder="Please Enter username..." required />
+                        </div>
+                        <div>
+                            <div class="form-control">
+                                <label for="chatroom">Room Name</label>
+                                <input type="text" name="chatroom" id="chatroom" placeholder="Enter name of chat room..." required />
+                               
+                            </div>
+                            <button type="submit" class="btn"> Enter Chat </button>
+                        </div>
+                    </div>
+                </form>
+            </main>
+        </div> 
+    </body>
+</html>
+ <!--Cross-origin resource sharing (CORS) is a mechanism that allows restricted resources on a web
+             page to be requested from another domain outside the domain from which the first resource was served.
+             A web page may freely embed cross-origin images, stylesheets, scripts, iframes, and videos.-->
